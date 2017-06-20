@@ -27,4 +27,10 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:25.4.0'
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile 'com.android.support:recyclerview-v7:' + rootProject.supportLibVersion;
+    compile 'android.arch.lifecycle:extensions:' + rootProject.archLifecycleVersion;
+    compile 'android.arch.persistence.room:runtime:' + rootProject.archRoomVersion;
+    annotationProcessor "android.arch.lifecycle:compiler:" + rootProject.archLifecycleVersion;
+    annotationProcessor "android.arch.persistence.room:compiler:" + rootProject.archRoomVersion;
 }
